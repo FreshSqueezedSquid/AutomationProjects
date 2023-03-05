@@ -1,0 +1,1 @@
+This is for my new automation repo I am creating to store new projkects I am working on in Pycharm
