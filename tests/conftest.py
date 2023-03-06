@@ -27,7 +27,7 @@ def setup(request):
         serv_obj = Service("/usr/local/bin/msedgedriver")
         driver = webdriver.Edge(service=serv_obj)
 
-    driver.get("https://www.americanairlines.com/")
+    driver.get("https://www.wikipedia.org/")
     driver.maximize_window()
     driver.implicitly_wait(7)
     driver.set_page_load_timeout(15)
