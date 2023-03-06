@@ -1,11 +1,16 @@
 import inspect
 import logging
 import pytest
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 
 @pytest.mark.usefixtures("setup")
 class BaseClass:
+
+    # enters text into search bar for given topic/subject
+    def searchTopic(self, data):
+        self.driver.find_element(By.CSS_SELECTOR, "#searchInput").send_keys(data)
 
     # Scrolls page down incrementally so that we can view all inputs
     def scrollDown(self):

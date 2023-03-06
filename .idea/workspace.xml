@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d5ea9aa-4cd7-44e2-971e-e582d23d7d48" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/WikipediaAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WikipediaAutomation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObjects/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/HomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObjects/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestData/LoginData.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/LoginData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestData/SearchData.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/SearchData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/ansi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/initialise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/ansi_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/ansitowin32_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/initialise_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/isatty_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/winterm_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/winterm.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_Wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Wiki.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/BaseClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/BaseClass.py" afterDir="false" />
     </list>
@@ -37,15 +46,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zacharysanchez/PycharmProjects/WikipediaAutomation&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="WikipediaAutomation" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="WikipediaAutomation" />
+      </console-settings>
+    </option>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="WikipediaAutomation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3" />
+      <option name="SDK_NAME" value="Python 3.11 (2)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="WikipediaAutomation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3" />
+      <option name="SDK_NAME" value="Python 3.11 (2)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in WikipediaAutomation" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="WikipediaAutomation" />
       <option name="INTERPRETER_OPTIONS" value="" />
