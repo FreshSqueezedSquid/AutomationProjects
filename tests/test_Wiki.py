@@ -28,7 +28,7 @@ class TestWiki(BaseClass):
         loginPage.sendLogin().click()
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#searchInput")))
         self.searchTopic(getSearch["person"])
-        time.sleep(2)
+        self.searchButton()
         self.takeScreenshot()
 
     @pytest.fixture(params=LoginData.test_login_data)

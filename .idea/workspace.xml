@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d5ea9aa-4cd7-44e2-971e-e582d23d7d48" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestData/SearchData.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/SearchData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/ansi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/initialise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/ansi_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/ansitowin32_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/initialise_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/isatty_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/tests/winterm_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/win32.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.11/site-packages/pip/_vendor/colorama/winterm.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_Wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Wiki.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/BaseClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/BaseClass.py" afterDir="false" />
     </list>

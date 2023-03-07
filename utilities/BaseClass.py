@@ -12,6 +12,9 @@ class BaseClass:
     def searchTopic(self, data):
         self.driver.find_element(By.CSS_SELECTOR, "#searchInput").send_keys(data)
 
+    def searchButton(self):
+        self.driver.find_element(By.XPATH, "//form[@id='searchform']//button[@class='cdx-button cdx-button--action-default cdx-button--type-normal cdx-button--framed cdx-search-input__end-button'][normalize-space()='Search']").click()
+
     # Scrolls page down incrementally so that we can view all inputs
     def scrollDown(self):
         self.driver.execute_script("window.scrollTo(0, 300);")
