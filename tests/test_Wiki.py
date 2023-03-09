@@ -1,10 +1,7 @@
-import time
-
-import pyautogui
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from PageObjects.HomePage import HomePage
+from PageObjects.MainPage import MainPage
 from TestData.LoginData import LoginData
 from TestData.SearchData import SearchData
 from utilities.BaseClass import BaseClass
@@ -19,7 +16,7 @@ class TestWiki(BaseClass):
         wait = WebDriverWait(self.driver, 45)
         log.info("Selecting viewing language")
 
-        homePage = HomePage(self.driver)
+        homePage = MainPage(self.driver)
         homePage.getLanguage().click()
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#pt-login-2")))
         loginPage = homePage.goToLogin()
