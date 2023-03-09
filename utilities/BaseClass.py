@@ -1,8 +1,9 @@
 import inspect
 import logging
+import time
 import pytest
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
+
 
 
 @pytest.mark.usefixtures("setup")
@@ -22,6 +23,12 @@ class BaseClass:
     # Allows a screenshot to be taken at any point in the booking process to help troubleshoot what is going wrong
     def takeScreenshot(self):
         self.driver.save_screenshot('screenshot.png')
+
+    def searchFunc(self, data):
+        self.searchTopic(data)
+        self.searchButton()
+        self.driver.find_element(By.CSS_SELECTOR, ".mw-ui-button.mw-ui-quiet.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-star.mw-ui-icon-wikimedia-star.mw-ui-icon-small").click()
+        time.sleep(1.5)
 
     # Creates a log of testing events
     def getLog(self):

@@ -1,4 +1,6 @@
 import time
+
+import pyautogui
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -27,9 +29,10 @@ class TestWiki(BaseClass):
         log.info("Logging into account")
         loginPage.sendLogin().click()
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#searchInput")))
-        self.searchTopic(getSearch["person"])
-        self.searchButton()
-        self.takeScreenshot()
+        self.searchFunc(getSearch["person"])
+        self.searchFunc(getSearch["place"])
+        self.searchFunc(getSearch["thing"])
+
 
     @pytest.fixture(params=LoginData.test_login_data)
     def getLogin(self, request):
@@ -38,4 +41,3 @@ class TestWiki(BaseClass):
     @pytest.fixture(params=SearchData.test_search_data)
     def getSearch(self, request):
         return request.param
-
