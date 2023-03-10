@@ -9,13 +9,6 @@ from selenium.webdriver.common.by import By
 @pytest.mark.usefixtures("setup")
 class BaseClass:
 
-    # enters text into search bar for given topic/subject
-    def searchTopic(self, data):
-        self.driver.find_element(By.CSS_SELECTOR, "#searchInput").send_keys(data)
-
-    def searchButton(self):
-        self.driver.find_element(By.XPATH, "//form[@id='searchform']//button[@class='cdx-button cdx-button--action-default cdx-button--type-normal cdx-button--framed cdx-search-input__end-button'][normalize-space()='Search']").click()
-
     # Scrolls page down incrementally so that we can view all inputs
     def scrollDown(self):
         self.driver.execute_script("window.scrollTo(0, 300);")
@@ -25,9 +18,13 @@ class BaseClass:
         self.driver.save_screenshot('screenshot.png')
 
     def searchFunc(self, data):
-        self.searchTopic(data)
-        self.searchButton()
-        self.driver.find_element(By.CSS_SELECTOR, ".mw-ui-button.mw-ui-quiet.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-star.mw-ui-icon-wikimedia-star.mw-ui-icon-small").click()
+        self.driver.find_element(By.CSS_SELECTOR, "#searchInput").send_keys(data)
+        #self.searchTopic(data)
+        self.driver.find_element(By.XPATH, "//form[@id='searchform']//button[@class='cdx-button "
+                                           "cdx-button--action-default cdx-button--type-normal cdx-button--framed "
+                                           "cdx-search-input__end-button'][normalize-space()='Search']").click()
+        self.driver.find_element(By.CSS_SELECTOR, ".mw-ui-button.mw-ui-quiet.mw-ui-icon.mw-ui-icon-element.mw-ui-icon"
+                                                  "-star.mw-ui-icon-wikimedia-star.mw-ui-icon-small").click()
         time.sleep(1.5)
 
     # Creates a log of testing events

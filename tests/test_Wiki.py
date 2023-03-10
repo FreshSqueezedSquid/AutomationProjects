@@ -1,3 +1,5 @@
+import time
+
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -13,13 +15,12 @@ class TestWiki(BaseClass):
     def test_wiki(self, getLogin, getSearch):
 
         log = self.getLog()
-        wait = WebDriverWait(self.driver, 45)
+        wait = WebDriverWait(self.driver, 15)
         log.info("Selecting viewing language")
 
-        homePage = MainPage(self.driver)
-        homePage.getLanguage().click()
+        mainPage = MainPage(self.driver)
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#pt-login-2")))
-        loginPage = homePage.goToLogin()
+        loginPage = mainPage.goToLogin()
         wait.until(EC.element_to_be_clickable(loginPage.getUsername()))
         loginPage.getUsername().send_keys(getLogin["username"])
         loginPage.getPassword().send_keys(getLogin["password"])
@@ -29,6 +30,11 @@ class TestWiki(BaseClass):
         self.searchFunc(getSearch["person"])
         self.searchFunc(getSearch["place"])
         self.searchFunc(getSearch["thing"])
+        mainPage.userLogout()
+        self.driver.delete_all_cookies()
+        wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".mw-logo")))
+        self.driver.find_element(By.CSS_SELECTOR, ".mw-logo").click()
+        time.sleep(2)
 
 
     @pytest.fixture(params=LoginData.test_login_data)
